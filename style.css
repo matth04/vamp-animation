@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+
+
+:root {
+    --cor-primeiro: #222F3A;
+    --cor-segundo: #755A42;
+    --cor-terceiro: #AEA297;
+    --cor-quarto: #6F7372;
+    --fonte-principal: 'Inter';
+}
+
+body {
+    background-color: #222F3A;
+    color: white;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url(img/levi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/*.container__imagem {
+    margin: 1em 2em 2em 1em;
+    height: 50vh;
+
+}
+*/
+
+.container__botao {
+    background-color:#AEA297;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 1em;
+    color: white;
+    display: block;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.botao__secundario{
+    background-color: transparent;
+    border: 2px solid white;    
+}
+
+.container__aviso{
+    font-size: 13px;
+    color: #6F7372;
+}
+
+.container__titulo {
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 1em;
+    
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+a:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+
+.container__btitulo {
+    text-decoration: none;
+    color: white;
+    
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+}
+
+.secundario {
+    background-color: #000000;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.tabela-preco
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: min(1600px, 100%);
+	margin-top: 4%;
+}
+
+.card-preco
+{
+	flex:1;
+	max-width: 360px;
+	background-color: black;
+	margin: 20px 10px;
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+	color: white;
+	transition: .3s linear;
+}
+
+.card-preco:hover .card-preco-header
+{
+	box-shadow: 0 0 0 26em 	#870202;
+
+}
+
+
+.card-preco-header
+{
+	background-color:  #870202;
+	display: inline-block;
+	color: white;
+	padding: 12px 30px;
+	border-radius: 0 0 20px 20px;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 600;
+	transition: .4s line;
+}
+
+.preco
+{
+	font-size: 70px;
+	color: 	#870202;
+	margin: 40px 0;
+	transition: 0.5s linear;
+}
+
+
+.preco sup, .preco span
+{
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.card-preco:hover, .card-preco:hover .preco
+{
+	color: rgb(255, 255, 255);
+}
+
+.card-preco li
+{
+	font-size: 16px;
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+
+.btn
+{
+	display: inline-block;
+	margin-bottom: 40px;
+	margin-top: 80px;
+	border: 2px solid #a50606;
+	color: #a50606;
+	padding: 18px 40px;
+	border-radius:  8px;
+	text-transform:  uppercase;
+	font-weight: 500;
+	transition:  .3s linear;
+    text-decoration: none;
+}
+
+.btn:hover
+{
+	background-color: #870202;
+	color: #fff; 
+}
+
+
+@media screen and (max-width: 1100px)
+{
+	.card-preco
+	{
+		flex: 50%;
+	}
+}
+
+.dispositivos__listas {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+	margin-top: 3em;
+	padding: 0;
+	margin-left: 5em;
+}
+
+.dispositivos {
+	text-align: center;
+	background-color: black;
+	margin: auto;
+}
+
+.dispositivos__titulo {
+	font-size: 28px;
+	color: white;	
+}
+
+.lista__item {
+	font-size: 22px;
+	color: white;
+}
+
+.rodape {
+	background-color: black;
+}
+
+.rodape__img {
+	margin: 0 33em;
+	overflow-y: auto;
+}
+
+.rodape__lista {
+	text-align: center;
+	display: flex;
+	list-style-type: none;
+	margin: 0 11em 0 11em;
+}
+
+.lista__link {
+	font-size: 15;
+	text-decoration: none;
+	margin: 0 1em 2em 1em;
+	background-color: transparent;
+
+}
+
+.rodape__texto {
+	display: block;
+	text-align: center;
+	margin: 1em 0;
+	text-decoration: none;
+	font-size: 12px;
+	color: #6F7372;
+}
+
+.lista__botao {
+	text-decoration: none;
+	color: #FFF;
+	font-size: 14px;
+}
